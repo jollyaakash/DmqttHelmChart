@@ -64,7 +64,7 @@ broker:
   repository: dmqttdemo.azurecr.io/dmqtt-broker
   tag: latest
   frontend:
-    replicas: 2
+    replicas: 1
   backend:
     replicas: 1
     chainCount: 2
