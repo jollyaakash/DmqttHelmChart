@@ -9,5 +9,5 @@ spec:
    replicas: {{- with .Values.broker.backend.replicas }}
    chainCount: {{- with .Values.broker.backend.chainCount }}
  image:
-   repository: {{- with .Values.broker.image.repository }}
-   tag: {{- with .Values.broker.image.tag }}
+   repository: "{{- with .Values.broker.image.repository }}"
+   tag: "{{- with .Values.broker.image.tag }}"
