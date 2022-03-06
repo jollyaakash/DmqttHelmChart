@@ -58,8 +58,9 @@ tolerations: []
 affinity: {}
 
 broker:
-  repository: dmqttdemo.azurecr.io/dmqtt-broker
-  tag: latest
+  image:
+    repository: dmqttdemo.azurecr.io/dmqtt-broker
+    tag: latest
   frontend:
     replicas: 1
   backend:
