@@ -11,9 +11,6 @@ image:
   pullPolicy: Always
   tag: latest
 
-imagePullSecrets:
-  - name: regcred
-
 nameOverride: ""
 fullnameOverride: ""
 
@@ -59,12 +56,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-broker:
-  repository: dmqttdemo.azurecr.io/dmqtt-broker
-  tag: latest
-  frontend:
-    replicas: 1
-  backend:
-    replicas: 1
-    chainCount: 2
