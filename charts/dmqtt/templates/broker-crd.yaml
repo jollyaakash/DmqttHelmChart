@@ -12,4 +12,3 @@ spec:
  image:
    repository: "{{ .Values.broker.image.repository }}"
    tag: "{{ .Values.broker.image.tag }}"
-   {{- end }}
