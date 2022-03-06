@@ -111,4 +111,14 @@ entries:
     urls:
     - https://github.com/jollyaakash/DmqttHelmChart/releases/download/dmqtt-0.2.0/dmqtt-0.2.0.tgz
     version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-03-06T18:37:22.888319214Z"
+    description: 'An installation package for D-MQTT: distributed MQTT broker for Azure IoT Edge platform'
+    digest: 0a7b88ecdcac7e41195ed44d9a4c6696cbc356b28f27e6cfd85cba3dd16a8568
+    name: dmqtt
+    type: application
+    urls:
+    - https://github.com/jollyaakash/DmqttHelmChart/releases/download/dmqtt-0.1.0/dmqtt-0.1.0.tgz
+    version: 0.1.0
 generated: "2022-03-04T21:37:38.207223416Z"
