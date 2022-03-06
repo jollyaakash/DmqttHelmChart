@@ -5,11 +5,11 @@ metadata:
  name: {{ $fullName }}-broker
 spec:
  frontend:
-   replicas: {{- with .Values.broker.frontend.replicas }}
+   replicas: {{ .Values.broker.frontend.replicas }}
  backendChain:
-   replicas: {{- with .Values.broker.backend.replicas }}
-   chainCount: {{- with .Values.broker.backend.chainCount }}
+   replicas: {{ .Values.broker.backend.replicas }}
+   chainCount: {{ .Values.broker.backend.chainCount }}
  image:
-   repository: "{{- with .Values.broker.image.repository }}"
-   tag: "{{- with .Values.broker.image.tag }}"
+   repository: "{{ .Values.broker.image.repository }}"
+   tag: "{{ .Values.broker.image.tag }}"
    {{- end }}
