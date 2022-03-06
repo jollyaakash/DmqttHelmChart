@@ -1,7 +1,8 @@
+{{- $fullName := include "dmqtt.fullname" . -}}
 apiVersion: aziot-edge.com/v1
 kind: IotedgeBroker
 metadata:
- name: edgy
+ name: {{ $fullName }}-broker
 spec:
  frontend:
    replicas: {{- with .Values.broker.frontend.replicas }}
