@@ -4,10 +4,10 @@ metadata:
  name: edgy
 spec:
  frontend:
-   replicas: 2
+   replicas: {{- with .Values.broker.frontend.replicas }}
  backendChain:
-   replicas: 1
-   chainCount: 2
+   replicas: {{- with .Values.broker.backend.replicas }}
+   chainCount: {{- with .Values.broker.backend.chainCount }}
  image:
-   repository: dmqttdemo.azurecr.io/dmqtt-broker
-   tag: latest
+   repository: {{- with .Values.broker.image.repository }}
+   tag: {{- with .Values.broker.image.tag }}
