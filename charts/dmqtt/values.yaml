@@ -11,6 +11,9 @@ image:
   pullPolicy: Always
   tag: latest
 
+imagePullSecrets:
+  - name: regcred
+
 nameOverride: ""
 fullnameOverride: ""
 
